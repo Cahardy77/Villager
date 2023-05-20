@@ -155,7 +155,6 @@ def find_likeminded_villagers(filename, villager_name):
         line = line.split("|")
         if line[0] == villager_name:
             persons_mind = line[2]
-    print(persons_mind)
     data.close()
 
     data = open(filename)
@@ -163,7 +162,6 @@ def find_likeminded_villagers(filename, villager_name):
         line = line.split("|")
         #print(line[2])
         if line[2] == persons_mind:
-            print(line[0])
             likeminded.add(line[0])
     
 
